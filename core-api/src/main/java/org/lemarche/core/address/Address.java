@@ -15,20 +15,17 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
-
-import java.util.Set;
+package org.lemarche.core.address;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class Address {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private Country country;
+    private Region region;
+    private Town town;
+    private Street street;
+    private long house;
 }

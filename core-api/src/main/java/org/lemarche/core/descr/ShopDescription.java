@@ -15,20 +15,12 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
-
-import java.util.Set;
+package org.lemarche.core.descr;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class ShopDescription extends DescriptionBase {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
 }

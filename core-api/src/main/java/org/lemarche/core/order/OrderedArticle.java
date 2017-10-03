@@ -15,20 +15,17 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
+package org.lemarche.core.order;
 
-import java.util.Set;
+import org.lemarche.core.PricedArticle;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class OrderedArticle {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private Order order;
+    private long quantity;
+    private PricedArticle price;
 }

@@ -15,20 +15,18 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
+package org.lemarche.core.order;
 
 import java.util.Set;
+
+import org.lemarche.core.client.Client;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class Order {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private Client client;
+    private Set<LocalShopOrder> localShopOrders;
 }

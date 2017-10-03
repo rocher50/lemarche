@@ -15,20 +15,18 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
+package org.lemarche.core.descr;
 
-import java.util.Set;
+import org.lemarche.core.Language;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class DescriptionBase {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private Language language;
+    private String name;
+    private String shortDescription;
+    private String fullDescription;
 }

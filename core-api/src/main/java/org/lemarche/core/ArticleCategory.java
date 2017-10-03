@@ -17,18 +17,15 @@
 
 package org.lemarche.core;
 
-import java.util.Set;
+import java.util.List;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public interface ArticleCategory {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    long getId();
+
+    List<ArticleCategory> getChildren();
 }

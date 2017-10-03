@@ -17,18 +17,24 @@
 
 package org.lemarche.core;
 
-import java.util.Set;
+import java.util.List;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class CategoryContainer implements ArticleCategory {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    @Override
+    public long getId() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public List<ArticleCategory> getChildren() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
 }

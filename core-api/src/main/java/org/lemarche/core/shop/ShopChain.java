@@ -15,20 +15,16 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
+package org.lemarche.core.shop;
 
-import java.util.Set;
+import org.lemarche.core.shop.loyalty.LoyaltyProgram;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class ShopChain {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private long id;
+    private LoyaltyProgram loyaltyProgram;
 }

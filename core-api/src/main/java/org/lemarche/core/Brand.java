@@ -23,12 +23,8 @@ import java.util.Set;
  * @author olubyans
  *
  */
-public class Article {
+public class Brand {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private long id;
+    private Set<Article> articles;
 }

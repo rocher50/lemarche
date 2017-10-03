@@ -15,20 +15,19 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
+package org.lemarche.core.client;
 
-import java.util.Set;
+import java.util.Currency;
+
+import org.lemarche.core.Language;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class ClientPreferences {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private Client client;
+    private Language language;
+    private Currency currency;
 }

@@ -15,20 +15,21 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
+package org.lemarche.core.shop;
 
 import java.util.Set;
+
+import org.lemarche.core.PricedArticle;
+import org.lemarche.core.address.Address;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class LocalShop {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private long id;
+    private ShopChain shopChain;
+    private Address address;
+    private Set<PricedArticle> pricedArticles;
 }

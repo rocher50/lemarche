@@ -17,18 +17,23 @@
 
 package org.lemarche.core;
 
-import java.util.Set;
+import java.util.Currency;
+
+import org.lemarche.core.shop.LocalShop;
+import org.lemarche.core.shop.loyalty.CollectiblePoint;
 
 /**
  * @author olubyans
  *
  */
-public class Article {
+public class PricedArticle {
 
-    private int id;
-    private PricedArticle basePrice;
-    private Set<PricedArticle> alternativeBasePrices;
-    private Set<ArticleCharacteristic> characteristics;
-    private Brand brand;
-    private long stock;
+    private long id;
+    private LocalShop localShop;
+    private Article article;
+    private UnitOfMeasurement uom;
+    private double priceAmount;
+    private Currency currency;
+    private double points;
+    private CollectiblePoint collectiblePoint;
 }
