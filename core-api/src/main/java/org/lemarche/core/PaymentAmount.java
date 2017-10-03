@@ -15,13 +15,16 @@
  * limitations under the License.
  */
 
-package org.lemarche.core.shop.loyalty;
+package org.lemarche.core;
+
+import java.util.Currency;
 
 /**
  * @author olubyans
  *
  */
-public class CollectiblePoint {
+public class PaymentAmount {
 
-    private LoyaltyProgram loyaltyProgrram;
+    private long amount;
+    private Currency currency;
 }

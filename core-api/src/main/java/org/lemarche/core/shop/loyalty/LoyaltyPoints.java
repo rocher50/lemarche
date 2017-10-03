@@ -15,21 +15,14 @@
  * limitations under the License.
  */
 
-package org.lemarche.core;
-
-import org.lemarche.core.shop.LocalShop;
-import org.lemarche.core.shop.loyalty.LoyaltyPoints;
+package org.lemarche.core.shop.loyalty;
 
 /**
  * @author olubyans
  *
  */
-public class PricedArticle {
+public class LoyaltyPoints {
 
-    private long id;
-    private LocalShop localShop;
-    private Article article;
-    private UnitOfMeasurement uom;
-    private PaymentAmount paymentAmount;
-    private LoyaltyPoints loyaltyPoints;
+    private long amount;
+    private LoyaltyProgram loyaltyProgrram;
 }

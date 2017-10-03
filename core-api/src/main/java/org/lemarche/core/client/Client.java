@@ -17,10 +17,16 @@
 
 package org.lemarche.core.client;
 
+import java.util.Set;
+
+import org.lemarche.core.shop.loyalty.LoyaltyPoints;
+
 /**
  * @author olubyans
  *
  */
 public class Client {
 
+    private long id;
+    private Set<LoyaltyPoints> loyaltyPoints;
 }
